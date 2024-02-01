@@ -1,14 +1,9 @@
-import Login from "@/app/componentes/login/Login";
 import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-  return (
-    <div>
-      <Login />
-    </div>
-  );
+  return <div className="max-w-[1440px] mx-auto">page</div>;
 };
 
 export default page;
