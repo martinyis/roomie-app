@@ -5,6 +5,7 @@ import React from "react";
 type Props = {};
 
 const page = (props: Props) => {
+  const [name, setName] = React.useState("");
   return (
     <div className="max-w-[1440px] mx-auto">
       <h1 className="text-[44px] text-center mt-[150px] max-w-[546px] mx-auto">
@@ -16,8 +17,10 @@ const page = (props: Props) => {
       >
         <input
           type="text"
-          placeholder="Your Name"
-          className="p-[10px] text-[14px]"
+          placeholder="Your screen name"
+          className="p-[10px]"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
       </form>
       <div className="flex justify-center mt-[85px]">
@@ -25,6 +28,8 @@ const page = (props: Props) => {
           onClick={(e: React.MouseEvent) => {
             e.preventDefault();
             window.location.href = "/rooming/2";
+            //save anme to lcoalstorge
+            localStorage.setItem("name", name);
           }}
         >
           Next

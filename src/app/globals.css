@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #9bbec8;
+  background-color: #5f9ccd;
+  color: #092835;
 }
 .dropdown {
   position: relative;
