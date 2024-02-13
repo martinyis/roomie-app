@@ -51,6 +51,10 @@ const dropzoneStyles: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  color: "#ffffff",
+  fontSize: "24px",
+  //on hver
+  transition: "all 0.3s ease",
 };
 
 const imageStyles: React.CSSProperties = {
