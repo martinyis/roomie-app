@@ -2,18 +2,28 @@
 import React, { useState } from "react";
 import { languages } from "./languages.js";
 import MainButton from "@/app/componentes/ui/MainButton";
+
 type Props = {};
 
 function Page({}: Props) {
-  // State to manage the selected language
+  // State to manage the selected languages
+  const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
   const [isInternationalStudent, setIsInternationalStudent] =
     useState<boolean>();
+
   // Function to handle language selection
   const handleLanguageChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    setSelectedLanguage(event.target.value);
+    const newLanguage = event.target.value;
+
+    // Check if the language is not already selected
+    if (!selectedLanguages.includes(newLanguage)) {
+      setSelectedLanguages((prevLanguages) => [...prevLanguages, newLanguage]);
+    }
+
+    setSelectedLanguage(newLanguage);
   };
 
   return (
@@ -44,31 +54,28 @@ function Page({}: Props) {
                 </option>
               );
             })}
-            {/* Add more language options as needed */}
           </select>
         </div>
+        {/* Display selected languages as a list below the dropdown */}
+        {selectedLanguages.length > 0 && (
+          <div className="text-center mt-4 max-w-[500px] mx-auto">
+            <ul className="flex gap-[10px]">
+              {selectedLanguages.map((lang, index) => (
+                <li
+                  className="px-[10px] py-[5px] rounded-[5px] bg-[#C4C4C4]"
+                  key={index}
+                >
+                  {lang}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </form>
-      <div className="max-w-[1000px] mx-auto mt-[100px] flex justify-between items-center">
-        <h2 className="text-[32px]">Are you an international student?</h2>
-        <div className="flex gap-[20px]">
-          <button
-            className={`w-[139px] h-[63px] ${
-              isInternationalStudent ? "bg-[#FFD7B1]" : "bg-[#D9D9D9]"
-            } rounded-[20px]`}
-            onClick={() => setIsInternationalStudent(true)}
-          >
-            Yes
-          </button>
-          <button
-            className={`w-[139px] h-[63px] ${
-              isInternationalStudent ? "bg-[#D9D9D9]" : "bg-[#FFD7B1]"
-            } rounded-[20px]`}
-            onClick={() => setIsInternationalStudent(false)}
-          >
-            No
-          </button>
-        </div>
-      </div>
+      {/* Rest of your code remains unchanged */}
+      {/* ... */}
+
+      {/* Next and Back buttons */}
       <div className="max-w-[1000px] mx-auto gap-[20px] flex justify-between items-center mt-[50px]">
         <MainButton
           onClick={(e: React.MouseEvent) => {

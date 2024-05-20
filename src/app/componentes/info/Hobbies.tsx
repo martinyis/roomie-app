@@ -5,188 +5,34 @@ import MainButton from "../ui/MainButton";
 type Props = {
   onClick: (e: React.MouseEvent) => void;
 };
-
+//list of hobbies Soccer Movies Chess Football Academics Clubs Fitness Baseball Music Gaming Hiking Hockey Basketball Art Nature Reading Skiing Technology Languages  Networking Running Entrepreneurship Instruments Coffee Writing
 const hob = [
-  {
-    hobby: "3D printing",
-  },
-  {
-    hobby: "amateur radio",
-  },
-  {
-    hobby: "Scrapbook",
-  },
-  {
-    hobby: "Amateur radio",
-  },
-  {
-    hobby: "Acting",
-  },
-  {
-    hobby: "Baton twirling",
-  },
-  {
-    hobby: "Board games",
-  },
-  {
-    hobby: "Book restoration",
-  },
-  {
-    hobby: "Cabaret",
-  },
-  {
-    hobby: "Calligraphy",
-  },
-  {
-    hobby: "Candle making",
-  },
-  {
-    hobby: "Computer programming",
-  },
-  {
-    hobby: "Coffee roasting",
-  },
-  {
-    hobby: "Cooking",
-  },
-  {
-    hobby: "Coloring",
-  },
-  {
-    hobby: "Cosplaying",
-  },
-  {
-    hobby: "Couponing",
-  },
-  {
-    hobby: "Creative writing",
-  },
-  {
-    hobby: "Crocheting",
-  },
-  {
-    hobby: "Cryptography",
-  },
-  {
-    hobby: "Dance",
-  },
-  {
-    hobby: "Digital arts",
-  },
-  {
-    hobby: "Drama",
-  },
-  {
-    hobby: "Drawing",
-  },
-  {
-    hobby: "Do it yourself",
-  },
-  {
-    hobby: "Electronics",
-  },
-  {
-    hobby: "Embroidery",
-  },
-  {
-    hobby: "Fashion",
-  },
-  {
-    hobby: "Flower arranging",
-  },
-  {
-    hobby: "Foreign language learning",
-  },
-  {
-    hobby: "Gaming",
-  },
-  {
-    hobby: "tabletop games",
-  },
-  {
-    hobby: "role-playing games",
-  },
-  {
-    hobby: "Gambling",
-  },
-  {
-    hobby: "Genealogy",
-  },
-  {
-    hobby: "Glassblowing",
-  },
-  {
-    hobby: "Gunsmithing",
-  },
-  {
-    hobby: "Homebrewing",
-  },
-  {
-    hobby: "Ice skating",
-  },
-  {
-    hobby: "Jewelry making",
-  },
-  {
-    hobby: "Jigsaw puzzles",
-  },
-  {
-    hobby: "Juggling",
-  },
-  {
-    hobby: "Knapping",
-  },
-  {
-    hobby: "Knitting",
-  },
-  {
-    hobby: "Kabaddi",
-  },
-  {
-    hobby: "Knife making",
-  },
-  {
-    hobby: "Lacemaking",
-  },
-  {
-    hobby: "Lapidary",
-  },
-  {
-    hobby: "Leather crafting",
-  },
-  {
-    hobby: "Lego building",
-  },
-  {
-    hobby: "Lockpicking",
-  },
-  {
-    hobby: "Machining",
-  },
-  {
-    hobby: "Macrame",
-  },
-  {
-    hobby: "Metalworking",
-  },
-  {
-    hobby: "Magic",
-  },
-  {
-    hobby: "Model building",
-  },
-  {
-    hobby: "Listening to music",
-  },
-  {
-    hobby: "Origami",
-  },
-  {
-    hobby: "Painting",
-  },
-  {
-    hobby: "Playing musical instruments",
-  },
+  { hobby: "Soccer" },
+  { hobby: "Movies" },
+  { hobby: "Chess" },
+  { hobby: "Football" },
+  { hobby: "Academics" },
+  { hobby: "Clubs" },
+  { hobby: "Fitness" },
+  { hobby: "Baseball" },
+  { hobby: "Music" },
+  { hobby: "Gaming" },
+  { hobby: "Hiking" },
+  { hobby: "Hockey" },
+  { hobby: "Basketball" },
+  { hobby: "Art" },
+  { hobby: "Nature" },
+  { hobby: "Reading" },
+  { hobby: "Skiing" },
+  { hobby: "Technology" },
+  { hobby: "Languages" },
+  { hobby: "Networking" },
+  { hobby: "Running" },
+  { hobby: "Entrepreneurship" },
+  { hobby: "Instruments" },
+  { hobby: "Coffee" },
+  { hobby: "Writing" },
+  { hobby: "3D printing" }, // I've kept the existing hobby "3D printing" from your initial array
 ];
 
 function Hobbies({ onClick }: Props) {

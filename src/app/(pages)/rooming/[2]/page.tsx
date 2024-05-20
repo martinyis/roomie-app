@@ -29,10 +29,11 @@ const page = (props: Props) => {
             aria-placeholder="Year of Study"
           >
             <option value="1">Year of Study</option>
-            <option value="1">1st Year</option>
-            <option value="2">2nd Year</option>
-            <option value="3">3rd Year</option>
-            <option value="4">4th Year</option>
+            <option value="1">Freshman</option>
+            <option value="2">Sophomore</option>
+            <option value="3">Junior</option>
+            <option value="4">Senior</option>
+            <option value="4">Graduate</option>
           </select>
           {/* age */}
           <input type="text" placeholder="Age" className="p-[10px]" />

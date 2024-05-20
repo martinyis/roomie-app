@@ -65,8 +65,7 @@ const Login = (props: Props) => {
         ) : (
           <div>
             <h3 className="text-center max-w-[763px] pt-[150px] mx-auto text-[44px]">
-              Your Account is good to go! Now let’s get you started on some
-              rooming preferences...
+              Looking for the perfect roommate? Now let’s get you started…
             </h3>
             <div className="flex justify-center mt-[85px]">
               <MainButton

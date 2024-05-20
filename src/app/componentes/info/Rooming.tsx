@@ -4,60 +4,93 @@ import MainButton from "../ui/MainButton";
 type Props = {};
 const sleep = [
   {
-    sleep: "8 hours",
+    sleep: "6 hours",
   },
   {
     sleep: "7 hours",
   },
   {
-    sleep: "6 hours",
+    sleep: "8 hours",
   },
   {
-    sleep: "5 hours",
+    sleep: "9 hours",
   },
   {
-    sleep: "4 hours",
+    sleep: "Early Bird",
   },
   {
-    sleep: "3 hours",
+    sleep: "Morning Slowpoke",
+  },
+  {
+    sleep: "Night Owl",
+  },
+  {
+    sleep: "Dusk Dreamer",
   },
 ];
 const conditions = [
   {
-    condition: "Quiet",
+    condition: "Hot",
   },
   {
-    condition: "Noisy",
+    condition: "Warm",
   },
   {
-    condition: "Dark",
+    condition: "Average",
   },
   {
-    condition: "Light",
+    condition: "Cooler",
   },
   {
     condition: "Cold",
   },
   {
-    condition: "Hot",
+    condition: "Heavy Sleeper",
+  },
+  {
+    condition: "Light Sleeper",
+  },
+  {
+    condition: "Dark Room",
+  },
+  {
+    condition: "Nightlight Style",
+  },
+  {
+    condition: "Silent",
+  },
+  {
+    condition: "Quiet",
+  },
+  {
+    condition: "Disturbances",
   },
 ];
 
 const routine = [
   {
-    routine: "Daily",
+    routine: "Everyday",
   },
   {
-    routine: "Weekly",
+    routine: "Once a week",
   },
   {
-    routine: "Monthly",
+    routine: "Once a month",
   },
   {
-    routine: "Yearly",
+    routine: "Whenever needed",
   },
   {
-    routine: "Never",
+    routine: "Neat Room",
+  },
+  {
+    routine: "Occasionally Disorganized",
+  },
+  {
+    routine: "Messy",
+  },
+  {
+    routine: "Minimalistic",
   },
 ];
 const priorities = [
@@ -94,7 +127,7 @@ function Rooming({}: Props) {
   return (
     <div className="mt-[100px] mb-[100px] max-w-[1100px] mx-auto">
       <h2 className="text-[28px]">
-        1. Mix and Match which choices best represent your sleeping routine:
+        1. Mix and match which best describe your sleep routine:
       </h2>
       <div className="flex gap-[20px] flex-wrap max-h-[600px] mt-[20px]">
         {sleep.map((sleep) => {
@@ -102,7 +135,7 @@ function Rooming({}: Props) {
         })}
       </div>
       <h2 className="text-[28px] mt-[20px]">
-        2. What conditions best describe your comfortable sleep environment:
+        2. Mix and match your sleep style preferences:
       </h2>
       <div className="flex gap-[20px] flex-wrap max-h-[600px] mt-[20px]">
         {conditions.map((condition) => {
@@ -110,7 +143,7 @@ function Rooming({}: Props) {
         })}
       </div>
       <h2 className="text-[28px] mt-[20px]">
-        3. Which describes your cleanliness/cleaning routine:
+        3. Mix and match you cleaning schedule and cleanliness preferences
       </h2>
       <div className="flex gap-[20px] flex-wrap max-h-[600px] mt-[20px]">
         {routine.map((routine) => {

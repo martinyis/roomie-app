@@ -8,7 +8,7 @@ type Props = {
 const Register = ({ changePage }: Props) => {
   return (
     <div className="max-w-[1000px] mx-auto mt-[200px]">
-      <h1 className="text-[44px] mb-[50px]">Choose a username and password</h1>
+      <h1 className="text-[44px] mb-[50px]">Let’s start your account setup</h1>
       <form action="" className="flex flex-col gap-4">
         <input
           type="text"

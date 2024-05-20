@@ -8,8 +8,8 @@ const page = (props: Props) => {
   const [name, setName] = React.useState("");
   return (
     <div className="max-w-[1440px] mx-auto">
-      <h1 className="text-[44px] text-center mt-[150px] max-w-[546px] mx-auto">
-        Start with your screen name for others to see!
+      <h1 className="text-[44px] text-center mt-[150px] max-w-[746px] mx-auto">
+        Start with your current UNH Starrez screen name for others to see!
       </h1>
       <form
         action=""
